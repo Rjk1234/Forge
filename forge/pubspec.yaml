@@ -1,0 +1,73 @@
+name: forge
+description: "A Workout Planning and Tracking App."
+publish_to: 'none'
+
+version: 1.0.0+2
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  flutter_bloc: ^8.0.0
+  bloc: ^8.0.0
+
+  # Dependency Injection
+  get_it: ^7.6.0
+
+  # Navigation
+  go_router: ^13.0.0
+
+  # Local Database
+  drift: ^2.28.0
+  sqlite3_flutter_libs: ^0.5.0
+  path_provider: ^2.1.0
+  path: ^1.9.0
+
+  # Functional Programming
+  fpdart: ^1.1.0
+
+  # Utilities
+  intl: any
+  equatable: ^2.0.5
+  shared_preferences: ^2.2.0
+  uuid: ^4.5.1
+
+  # Networking
+  dio: ^5.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # Drift code generation (app_database.g.dart is generated and committed).
+  drift_dev: ^2.28.0
+  build_runner: ^2.4.13
+  bloc_test: ^9.1.7
+  mocktail: ^1.0.4
+  # Generates the native splash screens (Android, iOS) from the config below.
+  flutter_native_splash: ^2.4.8
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+# Native splash screen. Regenerate after any change with:
+#   dart run flutter_native_splash:create
+flutter_native_splash:
+  # Same value as AppColors.bg — the app has a single dark theme.
+  color: "#131315"
+  image: assets/images/splash_icon.png
+  android_gravity: center
+  ios_content_mode: center
+  # Android 12+ draws the icon inside a circular mask on this background.
+  android_12:
+    color: "#131315"
+    image: assets/images/splash_icon.png

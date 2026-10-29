@@ -1,0 +1,3 @@
+# Spec Kit extension hook registry for Rider Mobile.
+# Add only Mobile-local, non-Git hooks approved by the project governance process.
+hooks: {}

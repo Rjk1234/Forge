@@ -1,0 +1,4 @@
+{
+  "feature_directory": null,
+  "_note": "Reset 2026-09-08. Set this to the current feature's 'specs/<slug>' directory when a feature workflow is actually running (see prompts/README.md)."
+}

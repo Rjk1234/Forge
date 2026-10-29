@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "workflows": {
+    "speckit-rider-mobile": {
+      "name": "Rider Mobile Full SDD Cycle",
+      "version": "2.0.0",
+      "description": "Runs specify \u2192 clarify \u2192 requirements-checklist \u2192 G-01 \u2192 plan \u2192 G-02 \u2192 tasks \u2192 analyze \u2192 G-03 \u2192 implement, with G-04/G-05 as external human gates",
+      "source": "bundled",
+      "installed_at": "2026-07-22T13:44:21.651671+00:00",
+      "updated_at": "2026-09-01T00:00:00.000000+00:00"
+    }
+  }
+}

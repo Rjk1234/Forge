@@ -1,0 +1,895 @@
+{
+  "@@locale": "en",
+  "createPlanTitle": "Create Plan",
+  "editPlanTitle": "Edit Plan",
+  "planNameLabel": "Plan Name",
+  "planNameHint": "e.g. Push Day",
+  "planNameRequiredError": "Plan name is required",
+  "planExercisesRequiredError": "Add at least one exercise",
+  "planFillHighlightedFieldsError": "Fill in the highlighted fields",
+  "addExerciseButton": "Add Exercise",
+  "savePlanButton": "Save Plan",
+  "retryButton": "Retry",
+  "removeExerciseTooltip": "Remove exercise",
+  "setsLabel": "Sets",
+  "repsLabel": "Reps",
+  "durationLabel": "Duration",
+  "weightLabel": "Weight (kg)",
+  "restLabel": "Rest (s)",
+  "setsError": "Enter a whole number of sets from 1 to {max}",
+  "@setsError": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "repsError": "Enter a whole number of reps from 1 to {max}",
+  "@repsError": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "durationError": "Enter a valid duration (mm:ss)",
+  "weightError": "Enter a weight above 0 and up to {max} kg",
+  "@weightError": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "restError": "Enter a rest period from 0 to {max} seconds",
+  "@restError": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "savePlanFailureMessage": "Could not save the plan. Please try again.",
+  "discardChangesTitle": "Discard changes?",
+  "discardChangesMessage": "You have unsaved changes. If you go back now, your changes will be lost.",
+  "discardButton": "Discard",
+  "keepEditingButton": "Keep Editing",
+  "loadPlanError": "Couldn't load the workout plan.",
+  "exerciseTypeBadgeWeighted": "Weighted",
+  "exerciseTypeBadgeTimeBased": "Time-based",
+  "exerciseTypeBadgeBodyweight": "Bodyweight",
+  "noPlanExercisesMessage": "Tap \"Add Exercise\" to build your plan.",
+  "planDetailStartWorkoutButton": "Start Workout",
+  "planDetailScheduleButton": "Schedule",
+  "planDetailEditTooltip": "Edit plan",
+  "planDetailDeleteTooltip": "Delete plan",
+  "planDetailBackTooltip": "Back",
+  "planDetailExercisesSectionLabel": "EXERCISES",
+  "planDetailLoadingSemantics": "Loading plan details",
+  "planDetailWeightLabel": "Weight",
+  "planDetailRestLabel": "Rest",
+  "planNotAvailableTitle": "This plan is no longer available",
+  "planNotAvailableBody": "It may have been deleted, or something went wrong reading local data.",
+  "planNotAvailableButton": "Back to Plans",
+  "exerciseUnavailableName": "Exercise unavailable",
+  "deletePlanDialogTitle": "Delete this workout plan?",
+  "deletePlanCancelButton": "Cancel",
+  "deletePlanDeleteButton": "Delete",
+  "deletePlanDeletingLabel": "Deleting…",
+  "deletePlanRetryButton": "Retry",
+  "deletePlanErrorMessage": "Couldn't delete the plan — something went wrong writing to local storage. Nothing was removed.",
+  "scheduleScreenTitle": "Schedule",
+  "scheduleRestDayLabel": "Rest day",
+  "scheduleRecurrenceWeekly": "Weekly",
+  "scheduleTodayMeta": "Weekly · Today",
+  "scheduleEditTooltip": "Edit schedule for this day",
+  "scheduleRowMenuTooltip": "More options for this day",
+  "scheduleChangeDaysAction": "Change days",
+  "scheduleRemoveAction": "Remove from this day",
+  "scheduleStartButton": "Start",
+  "scheduleEmptyTitle": "No workouts scheduled",
+  "scheduleEmptySubtitle": "Assign a plan to a day to see it here.",
+  "scheduleEmptyCta": "Schedule a plan",
+  "scheduleErrorTitle": "Couldn't load your schedule",
+  "scheduleErrorReassurance": "Your plans and history are safe.",
+  "scheduleRetryButton": "Retry",
+  "scheduleLoadingSemantics": "Loading schedule",
+  "newScheduleTitle": "New Schedule",
+  "editScheduleTitle": "Edit Schedule",
+  "assignScheduleLoadingSemantics": "Loading schedule assignment",
+  "workoutPlanFieldLabel": "WORKOUT PLAN",
+  "workoutPlanSemanticsPrefix": "Workout Plan: ",
+  "daysFieldLabel": "DAYS",
+  "recurrenceFieldLabel": "RECURRENCE",
+  "selectAtLeastOneDayHelper": "Select at least one day to schedule this plan.",
+  "recurrenceWeeklyTitle": "Repeats weekly",
+  "recurrenceWeeklySubtitle": "Only weekly recurrence is supported",
+  "saveScheduleButton": "Save Schedule",
+  "retrySaveScheduleButton": "Retry Save",
+  "savingScheduleLabel": "Saving…",
+  "invalidPlanBannerTitle": "This plan is no longer available",
+  "invalidPlanBannerSubtitle": "It may have been deleted. Choose a different plan to schedule.",
+  "scheduleSaveFailureSubtitle": "Something went wrong writing to local storage. Nothing was changed — tap Retry to try again.",
+  "profileScreenTitle": "Profile",
+  "profileDisplayNameLabel": "Display Name",
+  "profileDisplayNameHint": "Your name",
+  "profileFitnessGoalLabel": "Fitness Goal",
+  "profileFitnessGoalHint": "Select a goal",
+  "profileExperienceLevelLabel": "Experience Level",
+  "profileHeightLabel": "Height (cm)",
+  "profileHeightHint": "e.g. 178",
+  "profileWeightLabel": "Weight (kg)",
+  "profileWeightHint": "e.g. 76",
+  "profileSaveChanges": "Save Changes",
+  "profileSaved": "Profile saved",
+  "profileLogOut": "Log Out",
+  "profileInvalidNumber": "Enter a valid positive number.",
+  "profileFixFields": "Fix the highlighted fields to save.",
+  "profileLoadErrorTitle": "Couldn't load your profile",
+  "profileSaveErrorTitle": "Couldn't save your profile",
+  "profileLoadErrorBody": "Something went wrong reading local storage. Tap Retry to try again.",
+  "profileSaveErrorBody": "Something went wrong writing to local storage. Tap Retry to try again.",
+  "profileRetry": "Retry",
+  "profileFitnessGoalBuildMuscle": "Build Muscle",
+  "profileFitnessGoalLoseWeight": "Lose Weight",
+  "profileFitnessGoalGeneralFitness": "General Fitness",
+  "removeScheduleTitle": "Remove from schedule?",
+  "removeScheduleConfirmButton": "Remove",
+  "removeScheduleRetryButton": "Retry",
+  "removeScheduleCancelButton": "Cancel",
+  "removeScheduleRemovingLabel": "Removing…",
+  "removeScheduleErrorMessage": "Couldn't remove this entry. Please try again.",
+  "preStartScreenTitle": "Overview",
+  "preStartExercisesSectionLabel": "EXERCISES",
+  "preStartBeginButton": "Begin Workout",
+  "preStartWeightNotSet": "—",
+  "preStartUnavailableTitle": "This plan is no longer available",
+  "preStartUnavailableBody": "It may have been deleted or has no exercises configured.",
+  "preStartBackToScheduleButton": "Back to Schedule",
+  "preStartErrorTitle": "Couldn't load this workout",
+  "preStartErrorBody": "Something went wrong reading local data. Your data is safe — tap Retry to try again.",
+  "preStartRetryButton": "Retry",
+  "preStartLoadingSemantics": "Loading workout overview",
+  "activeWorkoutCompleteSetButton": "Complete Set",
+  "activeWorkoutSkipButton": "Skip",
+  "activeWorkoutPauseButton": "Pause",
+  "activeWorkoutResumeButton": "Resume",
+  "activeWorkoutCancelButton": "Cancel",
+  "activeWorkoutRepsLabel": "Reps",
+  "activeWorkoutWeightLabel": "Weight (kg)",
+  "activeWorkoutDurationLabel": "Duration",
+  "activeWorkoutRepsError": "Enter reps from 1 to {max}",
+  "@activeWorkoutRepsError": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "activeWorkoutWeightError": "Enter a weight above 0 and up to {max} kg",
+  "@activeWorkoutWeightError": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "activeWorkoutDurationError": "Enter a duration from 1 to {max} seconds",
+  "@activeWorkoutDurationError": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "activeWorkoutPausedTitle": "Workout Paused",
+  "restTimerRestingLabel": "Resting",
+  "restTimerSkipRestButton": "Skip Rest",
+  "restTimerUpNextLabel": "Up Next",
+  "restTimerMetaSeparator": "·",
+  "cancelWorkoutTitle": "Cancel this workout?",
+  "cancelWorkoutBodyWithoutPlan": "Your progress won't be saved. This session won't appear in your workout history.",
+  "cancelWorkoutKeepGoingButton": "Keep Going",
+  "cancelWorkoutDiscardButton": "Discard Workout",
+  "workoutSummaryAppBarTitle": "Workout Complete",
+  "workoutSummaryLoadingAppBarTitle": "Active Workout",
+  "workoutSummaryLoadingButton": "Saving Workout…",
+  "workoutSummaryDoneButton": "Done",
+  "workoutSummaryViewHistoryButton": "View History",
+  "workoutSummaryDurationLabel": "Duration",
+  "workoutSummaryExercisesLabel": "Exercises",
+  "workoutSummarySetsLoggedLabel": "Sets Logged",
+  "workoutSummaryPerformanceLabel": "Performance",
+  "workoutSummaryDurationSuffix": "min",
+  "workoutSummarySkippedPill": "Skipped",
+  "workoutSummaryErrorTitle": "Couldn't save your workout",
+  "workoutSummaryErrorNote": "Your logged sets are still here — tap Retry to save again. Nothing has been recorded to your history yet.",
+  "workoutSummaryRetryButton": "Retry",
+  "workoutSummaryInvalidNote": "Some of the logged values are not valid, so this workout can't be saved. Nothing has been recorded to your history.",
+  "historyScreenTitle": "History",
+  "historyEmptyTitle": "No workout history yet",
+  "historyEmptySubtitle": "Your completed workouts will appear here.",
+  "historyErrorTitle": "Couldn't load your history",
+  "historyErrorBody": "Something went wrong reading local data. Your plans and schedule are unaffected.",
+  "historyRetryLabel": "Retry",
+  "detailScreenTitle": "Workout Detail",
+  "detailErrorTitle": "Couldn't load this workout",
+  "detailErrorBody": "Something went wrong reading local data. Your workout history is unaffected.",
+  "progressScreenTitle": "Progress",
+  "progressErrorTitle": "Couldn't load your progress",
+  "progressErrorBody": "Something went wrong reading local data. Your workout history is unaffected.",
+  "progressEmptyTitle": "Not enough data yet",
+  "progressEmptySubtitle": "Complete a few more workouts to see your progress.",
+  "progressLatestSessionLabel": "Latest Session",
+  "progressTopWeight": "Top Weight",
+  "progressBestReps": "Best Reps",
+  "progressVolume": "Volume",
+  "progressTotalReps": "Total Reps",
+  "progressTotalSets": "Total Sets",
+  "progressBestDuration": "Best Duration",
+  "progressTotalTime": "Total Time",
+  "progressSets": "Sets",
+  "progressWorkoutDuration": "Workout Time",
+  "progressChartWeight": "Weight",
+  "progressChartDuration": "Duration",
+  "progressChartReps": "Reps",
+  "progressWeightUnit": "kg",
+  "progressRepsUnit": "reps",
+  "statsTitle": "Stats",
+  "statsWorkoutsCompleted": "Workouts Completed",
+  "statsTotalVolume": "Total Volume",
+  "statsTotalDuration": "Total Duration",
+  "statsAvgDuration": "Avg. Duration",
+  "statsExerciseBreakdownLabel": "Exercise Breakdown",
+  "statsRecordsLabel": "Records",
+  "statsPersonalBestsTitle": "Personal Bests",
+  "statsPersonalBestsSub": "Your all-time top performances",
+  "statsEmptyTitle": "No stats yet",
+  "statsEmptySub": "Complete a workout to start building your statistics.",
+  "statsEmptyCta": "Start a Workout",
+  "statsErrorTitle": "Couldn't load your stats",
+  "statsErrorBody": "Something went wrong calculating your statistics. Your workout history is unaffected.",
+  "statsBestWeight": "Best weight",
+  "statsBestTime": "Best time",
+  "statsBestReps": "Best reps",
+  "statsVolumeUnit": "kg",
+  "statsMinutesUnit": "min",
+  "statsSecondsUnit": "s",
+  "statsNotAvailable": "—",
+  "pbScreenTitle": "Personal Bests",
+  "pbEmptyTitle": "No personal bests yet",
+  "pbEmptySubtitle": "Complete a workout to start setting personal bests.",
+  "pbErrorTitle": "Couldn't load your personal bests",
+  "pbErrorBody": "Something went wrong calculating this data. Your workout history is unaffected.",
+  "pbBadgeWeightLabel": "Best weight",
+  "pbBadgeTimeLabel": "Best time",
+  "pbBadgeRepsLabel": "Best reps",
+  "pbWeightUnit": "kg",
+  "pbRepsUnit": "reps",
+  "weekdayShortMon": "Mon",
+  "weekdayFullMon": "Monday",
+  "weekdayShortTue": "Tue",
+  "weekdayFullTue": "Tuesday",
+  "weekdayShortWed": "Wed",
+  "weekdayFullWed": "Wednesday",
+  "weekdayShortThu": "Thu",
+  "weekdayFullThu": "Thursday",
+  "weekdayShortFri": "Fri",
+  "weekdayFullFri": "Friday",
+  "weekdayShortSat": "Sat",
+  "weekdayFullSat": "Saturday",
+  "weekdayShortSun": "Sun",
+  "weekdayFullSun": "Sunday",
+  "profileExperienceBeginner": "Beginner",
+  "profileExperienceIntermediate": "Intermediate",
+  "profileExperienceAdvanced": "Advanced",
+  "cancelWorkoutBodyWithPlan": "Your progress on \"{planName}\" won't be saved. This session won't appear in your workout history.",
+  "@cancelWorkoutBodyWithPlan": {
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "workoutSummaryErrorPlan": "Something went wrong writing \"{planName}\" to local storage.",
+  "@workoutSummaryErrorPlan": {
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "historySummaryLine": "{minutes} min · {exercises, plural, =1{1 exercise} other{{exercises} exercises}} · {sets, plural, =1{1 set} other{{sets} sets}}",
+  "@historySummaryLine": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "exercises": {
+        "type": "int"
+      },
+      "sets": {
+        "type": "int"
+      }
+    }
+  },
+  "setPillWeighted": "{reps}×{weight}kg",
+  "@setPillWeighted": {
+    "placeholders": {
+      "reps": {
+        "type": "int"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "setPillReps": "{reps} reps",
+  "@setPillReps": {
+    "placeholders": {
+      "reps": {
+        "type": "int"
+      }
+    }
+  },
+  "restTimerTargetReps": "{reps} reps",
+  "@restTimerTargetReps": {
+    "placeholders": {
+      "reps": {
+        "type": "int"
+      }
+    }
+  },
+  "restTimerTargetWeight": "{weight} kg",
+  "@restTimerTargetWeight": {
+    "placeholders": {
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "restTimerTargetDuration": "{seconds}s",
+  "@restTimerTargetDuration": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "restTimerTarget": "Target: {value}",
+  "@restTimerTarget": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "restTimerUpNextName": "{exercise} — Set {setNumber} of {totalSets}",
+  "@restTimerUpNextName": {
+    "placeholders": {
+      "exercise": {
+        "type": "String"
+      },
+      "setNumber": {
+        "type": "int"
+      },
+      "totalSets": {
+        "type": "int"
+      }
+    }
+  },
+  "activeWorkoutSetOf": "Set {current} / {total}",
+  "@activeWorkoutSetOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "activeWorkoutExerciseOf": "Exercise {current} / {total}",
+  "@activeWorkoutExerciseOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "authWelcomeTitle": "Welcome back",
+  "authWelcomeSubtitle": "Sign in to continue",
+  "authEmailLabel": "Email",
+  "authPasswordLabel": "Password",
+  "authSignInButton": "Sign In",
+  "authInvalidCredentials": "Email or password is incorrect",
+  "exerciseFilterAll": "All",
+  "planDetailRestValue": "{seconds}s",
+  "@planDetailRestValue": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "exerciseCatalogueTitle": "Exercise Catalogue",
+  "exerciseCatalogueNoMatchTitle": "No exercises match your search",
+  "exerciseCatalogueNoMatchSubtitle": "Try a different name or clear the filter.",
+  "exerciseSearchHint": "Search exercises",
+  "pickerBannerPrefix": "Adding an exercise to ",
+  "navHome": "Home",
+  "navPlans": "Plans",
+  "navSchedule": "Schedule",
+  "navHistory": "History",
+  "navProgress": "Progress",
+  "navStats": "Stats",
+  "homeGreetingMorning": "Good morning, Athlete",
+  "homeGreetingAfternoon": "Good afternoon, Athlete",
+  "homeGreetingEvening": "Good evening, Athlete",
+  "homeProfileTooltip": "Profile",
+  "homeEmptyTitle": "No workouts yet",
+  "homeEmptySubtitle": "Create your first plan to get started",
+  "homeEmptyCta": "Create your first workout plan",
+  "homeReadyForPlan": "Ready for your scheduled {planName}?",
+  "@homeReadyForPlan": {
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "homeNoPlanSubtitle": "No workout planned for today",
+  "homeDailyIntentionTitle": "Daily intention",
+  "homeQuote1": "Consistency beats intensity every single time. Honor your tempo and show up with intent.",
+  "homeQuote2": "You don't have to be extreme, just consistent.",
+  "homeQuote3": "Small sets, done daily, build the strongest habits.",
+  "homeQuote4": "Strength is built one honest rep at a time.",
+  "homeQuote5": "Show up today. Future you will say thanks.",
+  "homeQuote6": "Progress is quiet. Trust the work you can't see yet.",
+  "homeQuote7": "Warm up the body, then focus the mind.",
+  "homeQuote8": "Rest is part of the plan, not a break from it.",
+  "homePlannedForToday": "Planned for today · ~{minutes} min",
+  "@homePlannedForToday": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "homeStatVolume": "Volume",
+  "homeStatExercises": "Exercises",
+  "homeStatSets": "Sets",
+  "homeVolumeApprox": "~{value} kg",
+  "@homeVolumeApprox": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "homeExerciseSequence": "Exercise sequence",
+  "homeMovementCount": "{count, plural, =1{1 movement} other{{count} movements}}",
+  "@homeMovementCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeRowWeighted": "{sets, plural, =1{1 set} other{{sets} sets}} · {reps} reps · {weight} kg",
+  "@homeRowWeighted": {
+    "placeholders": {
+      "sets": {
+        "type": "int"
+      },
+      "reps": {
+        "type": "int"
+      },
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "homeRowBodyweight": "{sets, plural, =1{1 set} other{{sets} sets}} · {reps} reps",
+  "@homeRowBodyweight": {
+    "placeholders": {
+      "sets": {
+        "type": "int"
+      },
+      "reps": {
+        "type": "int"
+      }
+    }
+  },
+  "homeRowTimed": "{sets, plural, =1{1 set} other{{sets} sets}} · {duration}",
+  "@homeRowTimed": {
+    "placeholders": {
+      "sets": {
+        "type": "int"
+      },
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "homeStartTodaysWorkout": "Start today's workout",
+  "homeDoneToday": "Done today",
+  "homeDoItAgain": "Do it again",
+  "startAgainTitle": "Already done today",
+  "startAgainMessage": "You already completed {planName} today. Start another session?",
+  "@startAgainMessage": {
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "startAgainConfirm": "Start anyway",
+  "startAgainCancel": "Go back",
+  "homeNoWorkoutTitle": "No workout planned today",
+  "homeNoWorkoutNext": "Your next session is {day} · {planName}",
+  "@homeNoWorkoutNext": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "homeNoWorkoutNoSchedule": "Schedule a plan and it will show up here.",
+  "homeNothingScheduledTitle": "Nothing scheduled yet",
+  "homeViewSchedule": "View schedule",
+  "homeScheduleAPlan": "Schedule a plan",
+  "homeThisWeek": "This week",
+  "homeWeekDaySemantics": "{day}: {status}",
+  "@homeWeekDaySemantics": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "homeWeekDayCompleted": "completed",
+  "homeWeekDayPlanned": "planned",
+  "homeWeekDayRest": "rest",
+  "homeWeekDayMissed": "missed",
+  "homeWeekProgress": "{done} of {total} done",
+  "@homeWeekProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "homeWeekDetailCompleted": "{day} · {plan} · {count, plural, =1{1 workout done} other{{count} workouts done}}",
+  "@homeWeekDetailCompleted": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "plan": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeWeekDetailPlanned": "{day} · {plan} · planned",
+  "@homeWeekDetailPlanned": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
+  "homeWeekDetailMissed": "{day} · {plan} · missed",
+  "@homeWeekDetailMissed": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
+  "homeWeekDetailRest": "{day} · Rest day",
+  "@homeWeekDetailRest": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "homeLastWorkout": "Last workout",
+  "homeLastWorkoutDetails": "{date} · {minutes} min · {volume} kg",
+  "@homeLastWorkoutDetails": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      },
+      "volume": {
+        "type": "String"
+      }
+    }
+  },
+  "homeNoWorkoutsLoggedTitle": "No workouts logged yet",
+  "homeNoWorkoutsLoggedBody": "Finish a workout and your last session will appear here.",
+  "homeWarmupTitle": "Warm-up focus",
+  "homeWarmupGeneric": "Five minutes of light cardio and joint circles before the first working set.",
+  "homeWarmupTipChest": "Band pull-aparts and arm circles open the chest and shoulders before pressing.",
+  "homeWarmupTipBack": "Cat-cow and light band rows wake up your back before pulling.",
+  "homeWarmupTipLegs": "Bodyweight squats and hip openers prepare your legs for load.",
+  "homeWarmupTipShoulders": "Band pull-aparts and thoracic rotations prime the shoulders before pressing.",
+  "homeWarmupTipBiceps": "Light curls and wrist circles get the elbows ready.",
+  "homeWarmupTipTriceps": "Arm swings and light pushdowns warm up the elbows.",
+  "homeWarmupTipCore": "Dead bugs and plank holds switch your core on.",
+  "homeRecoveryTitle": "Recovery tip",
+  "homeRecoveryTip1": "Take a short walk and stretch the muscles you trained last.",
+  "homeRecoveryTip2": "Aim for a full night of sleep; that is when strength is built.",
+  "homeRecoveryTip3": "Drink water through the day and eat protein with every meal.",
+  "exerciseCount": "{count, plural, =1{1 exercise} other{{count} exercises}}",
+  "@exerciseCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "setCount": "{count, plural, =1{1 set} other{{count} sets}}",
+  "@setCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sessionCount": "{count, plural, =1{1 session} other{{count} sessions}}",
+  "@sessionCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "workoutPlansTitle": "Workout Plans",
+  "plansEmptyTitle": "No workout plans yet",
+  "plansEmptySubtitle": "Build your first workout plan to see it listed here.",
+  "plansEmptyCta": "Create a workout plan",
+  "weightKgValue": "{weight} kg",
+  "@weightKgValue": {
+    "placeholders": {
+      "weight": {
+        "type": "String"
+      }
+    }
+  },
+  "valueNotAvailable": "—",
+  "preStartMetaScheduled": "{day} · {exercises}",
+  "@preStartMetaScheduled": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "exercises": {
+        "type": "String"
+      }
+    }
+  },
+  "preStartMetaScheduledToday": "{day} · Today · {exercises}",
+  "@preStartMetaScheduledToday": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "exercises": {
+        "type": "String"
+      }
+    }
+  },
+  "dayChipNotSelected": "{day}. Not selected.",
+  "@dayChipNotSelected": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "dayChipSelected": "{day}. Selected.",
+  "@dayChipSelected": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "dayChipUnavailable": "{day}. Unavailable — conflicts.",
+  "@dayChipUnavailable": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "scheduleConflictMessage": "{day} already has \"{plan}\" scheduled. Remove it from the Schedule tab first, or pick another day.",
+  "@scheduleConflictMessage": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
+  "scheduleHelperScheduledOn": "Scheduled on {days}.",
+  "@scheduleHelperScheduledOn": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "recurrenceSemantics": "{title}. {subtitle}. Toggle locked.",
+  "@recurrenceSemantics": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "subtitle": {
+        "type": "String"
+      }
+    }
+  },
+  "invalidPlanBannerSemantics": "{title}. {subtitle}",
+  "@invalidPlanBannerSemantics": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "subtitle": {
+        "type": "String"
+      }
+    }
+  },
+  "removeScheduleMessage": "{plan} on {day} will be removed. Your history is unaffected.",
+  "@removeScheduleMessage": {
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      },
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "deletePlanDialogMessage": "“{planName}” and its schedule assignments will be removed. Past workout sessions using this plan are unaffected.",
+  "@deletePlanDialogMessage": {
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "pageNotFoundTitle": "Not Found",
+  "pageNotFoundMessage": "Page not found: {location}",
+  "@pageNotFoundMessage": {
+    "placeholders": {
+      "location": {
+        "type": "String"
+      }
+    }
+  },
+  "logoutDialogTitle": "Log out?",
+  "logoutDialogMessage": "Logging out permanently deletes your profile, workout plans, schedules and workout history from this device. This can't be undone.",
+  "logoutCancelButton": "Cancel",
+  "logoutConfirmButton": "Log out",
+  "logoutBusyLabel": "Logging out…",
+  "logoutRetryButton": "Retry",
+  "logoutError": "Couldn't clear your data. Please try again.",
+  "durationHoursMinutes": "{hours}h {minutes}m",
+  "@durationHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "restTimerSemantics": "Rest timer: {time}",
+  "@restTimerSemantics": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "progressChartTitle": "{exercise} — {metric}",
+  "@progressChartTitle": {
+    "placeholders": {
+      "exercise": {
+        "type": "String"
+      },
+      "metric": {
+        "type": "String"
+      }
+    }
+  },
+  "progressTrendRising": "▲ {change} vs previous session",
+  "@progressTrendRising": {
+    "placeholders": {
+      "change": {
+        "type": "String"
+      }
+    }
+  },
+  "progressTrendFalling": "▼ {change} vs previous session",
+  "@progressTrendFalling": {
+    "placeholders": {
+      "change": {
+        "type": "String"
+      }
+    }
+  },
+  "pbDateSet": "Set {date}",
+  "@pbDateSet": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "homeLoadError": "Couldn't load your dashboard",
+  "exerciseCatalogueLoadError": "Couldn't load the exercise catalogue",
+  "scheduleSaveError": "Couldn't save your schedule",
+  "scheduleRemoveError": "Couldn't remove this entry",
+  "plansLoadError": "Couldn't load your workout plans",
+  "planLoadError": "Couldn't load the workout plan",
+  "planDeleteError": "Couldn't delete the plan",
+  "appTitle": "Forge",
+  "durationFormatError": "Enter duration as mm:ss",
+  "historyDetailEditTooltip": "Edit workout",
+  "historyDetailDeleteTooltip": "Delete workout",
+  "deleteSessionDialogTitle": "Delete this workout?",
+  "deleteSessionDialogMessage": "This workout will be removed from your history. Your statistics and progress will update to match. This can't be undone.",
+  "deleteSessionCancelButton": "Cancel",
+  "deleteSessionDeleteButton": "Delete",
+  "deleteSessionDeletingLabel": "Deleting…",
+  "deleteSessionRetryButton": "Retry",
+  "deleteSessionError": "Couldn't delete the workout. Nothing was removed.",
+  "editSessionTitle": "Edit Workout",
+  "editSessionSetLabel": "Set {number}",
+  "@editSessionSetLabel": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "editSessionSkippedLabel": "Skipped",
+  "editSessionSaveButton": "Save changes",
+  "editSessionSavingLabel": "Saving…",
+  "editSessionRetryButton": "Retry",
+  "editSessionNoValidSetError": "Keep at least one completed set. Un-skip a set and fill in its values.",
+  "editSessionSaveError": "Couldn't save your changes. The workout was not changed."
+}

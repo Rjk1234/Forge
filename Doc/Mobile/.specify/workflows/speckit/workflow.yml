@@ -1,0 +1,94 @@
+schema_version: "1.0"
+workflow:
+  id: "speckit-rider-mobile"
+  name: "Rider Mobile Full SDD Cycle"
+  version: "2.0.0"
+  author: "Mobile Architecture Team"
+  description: "Artifact-driven Rider Mobile SDD with G-01 through G-03 before implementation"
+
+requires:
+  speckit_version: ">=0.8.5"
+  integrations:
+    any:
+      - "codex"
+      - "claude"
+      - "copilot"
+      - "gemini"
+      - "opencode"
+
+inputs:
+  spec:
+    type: string
+    required: true
+    prompt: "Describe the Rider Mobile feature and provide exact BA, Backend, and QA source paths"
+  integration:
+    type: string
+    default: "auto"
+    prompt: "Initialized Spec Kit integration"
+
+# Constitutional policy: writes remain inside Mobile; Git/GitHub repository operations are
+# prohibited; missing source evidence is reported and blocks only the affected decision.
+
+steps:
+  - id: specify
+    command: speckit.specify
+    integration: "{{ inputs.integration }}"
+    input:
+      args: "{{ inputs.spec }}"
+
+  - id: clarify
+    command: speckit.clarify
+    integration: "{{ inputs.integration }}"
+    input:
+      args: "Resolve material ambiguity from source evidence"
+
+  - id: requirements-checklist
+    command: speckit.checklist
+    integration: "{{ inputs.integration }}"
+    input:
+      args: "Generate the G-01 requirements-quality checklist"
+
+  - id: g-01-spec-quality
+    type: gate
+    message: "G-01: Product Owner approval, complete requirements checklist, and zero clarification markers are required."
+    options: [approve, reject]
+    on_reject: abort
+
+  - id: plan
+    command: speckit.plan
+    integration: "{{ inputs.integration }}"
+    input:
+      args: "{{ inputs.spec }}"
+
+  - id: g-02-plan-constitution
+    type: gate
+    message: "G-02: Tech Lead approval and a passing post-design Constitution Check are required."
+    options: [approve, reject]
+    on_reject: abort
+
+  - id: tasks
+    command: speckit.tasks
+    integration: "{{ inputs.integration }}"
+    input:
+      args: "Generate traced, estimated, test-inclusive tasks with no Git operations"
+
+  - id: analyze
+    command: speckit.analyze
+    integration: "{{ inputs.integration }}"
+    input:
+      args: "Analyze spec, plan, and tasks; the human team retains the read-only G-03 report as analysis.md"
+
+  - id: g-03-task-consistency
+    type: gate
+    message: "G-03: zero CRITICAL findings, full requirement coverage, Tech Lead and implementing-developer approval are required."
+    options: [approve, reject]
+    on_reject: abort
+
+  - id: implement
+    command: speckit.implement
+    integration: "{{ inputs.integration }}"
+    input:
+      args: "Implement approved tasks only; stop for blockers; do not perform Git operations"
+
+  # G-04 human code review and G-05 QA validation are external human gates. The workflow prepares
+  # Mobile-local evidence but never performs Git/PR operations or fabricates approvals.
